@@ -19,6 +19,10 @@ Using Red-Green-Refactoring method, test the "add contact" feature. First, we ha
 ### Test delete feature in an address book
 In spec/AddressBook.js, we write the test and check it also fails using Jasmine Spec Runner. writing the spec, I expect the object `not.toBeDefined` if I try to get it from the address book. We need to write in AddressBook.js the delete function using the splice method of an array to remove a contact.
 
+### Removing redundant code
+Instead of setting up the AddressBook and the Contact in each of our specs, we can use a function that should be run before each of the tests : it's the `beforeEach` function.
+
+
 ## Dependencies
 [Jasmine](https://jasmine.github.io/pages/getting_started.html)
 Included is a sample app and sample tests. Open SpecRunner.html and run the included specs. Both the source files and their respective specs are linked in the <head> of the SpecRunner.html. To start using Jasmine, replace the source/spec files with your own.
