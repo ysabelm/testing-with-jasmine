@@ -17,7 +17,7 @@ describe ('name', function) {
 Using Red-Green-Refactoring method, test the "add contact" feature. First, we have to write the test in spec/AddressBookSpec.js and check it fails using Jasmine Spec Runner (Red). `AddressBook is not defined`. To let it pass, we have to write a constructor function - function AddressBook() - While refreshing, we read `Contact is not defined` --> We also need to write a contact constructor in a new file and add it as a src file in the html file...and so on. Neither addContact or getContact are defined --> we need to write them.
 
 ### Test delete feature in an address book
-
+In spec/AddressBook.js, we write the test and check it also fails using Jasmine Spec Runner. writing the spec, I expect the object `not.toBeDefined` if I try to get it from the address book. We need to write in AddressBook.js the delete function using the splice method of an array to remove a contact.
 
 ## Dependencies
 [Jasmine](https://jasmine.github.io/pages/getting_started.html)
